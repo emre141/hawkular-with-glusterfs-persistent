@@ -1,1 +1,1 @@
-# hawkular-with-glusterfs-persistent
+# Openshift Metric using GlusterFS Persisten Volume
