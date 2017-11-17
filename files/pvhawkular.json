@@ -1,0 +1,25 @@
+{
+  "kind": "PersistentVolume",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "glusterfs-cluster-hawkular",
+    "creationTimestamp": null,
+    "labels": {
+      "metrics-infra": "hawkular-cassandra"
+    }
+  },
+  "spec": {
+    "capacity": {
+      "storage": "10Gi"
+    },
+    "glusterfs": {
+      "endpoints": "glusterfs-cluster-hawkular",
+      "path": "gluster-hawkular-volume"
+    },
+    "accessModes": [
+      "ReadWriteOnce"
+    ],
+    "persistentVolumeReclaimPolicy": "Retain"
+  },
+  "status": {}
+}
